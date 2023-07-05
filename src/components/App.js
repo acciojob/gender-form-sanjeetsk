@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-        <label htmlFor="gender">Select your gender:</label><br></br>
+        <h2>Select your gender:</h2>
           <input type="radio" id="male" value="male" onChange={handleGenderChange}/>
           <label htmlFor="male">Male</label>
           <input type="radio" id="female" value="female" onChange={handleGenderChange}/>
@@ -27,7 +27,7 @@ const App = () => {
         {
           gender === 'male' && (
             <div>
-              <label htmlFor="shirt_size">Select your shirt size:</label><br></br>
+              <h2>Select your shirt size:</h2>
               <select id="shirt_size" value={size} onChange={handleSizeChange}>
                 <option value=''>Select size</option>
                 <option value='small'>Small</option>
@@ -41,7 +41,7 @@ const App = () => {
         {
           gender === 'female' && (
             <div>
-              <label htmlFor="shirt_size">Select your dress size:</label><br></br>
+              <h2>Select your dress size:</h2>
               <select id="shirt_size" value={size} onChange={handleSizeChange}>
                 <option value=''>Select size</option>
                 <option value='2'>2</option>
